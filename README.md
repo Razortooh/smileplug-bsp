@@ -14,10 +14,10 @@ The *Non-public* toolchain needed is listed under the "Generic SDK 5.0" on the e
 
 Current RootFS: 
 
-* Rootfs Tarball: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-07-18-smileplug-0.5.3b-rootfs.tar.bz2
-* Rootfs Tarball md5: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-07-18-smileplug-0.5.3b-rootfs.tar.bz2.md5
-* Rootfs Image: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.3b-rootfs.img
-* Rootfs Image md5 hash: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.3b-rootfs.img.md5
+* Rootfs Tarball: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-12-13-smileplug-0.5.4a-rootfs.tar.bz2
+* Rootfs Tarball md5: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-12-13-smileplug-0.5.4a-rootfs.tar.bz2.md5
+* Rootfs Image: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.4a-rootfs.img
+* Rootfs Image md5 hash: http://polyblog.s3.amazonaws.com/smileplug-0.5.4a-rootfs.img.md5
 
 All items mentioned in this page are found in a single zip file *TODO* update this zip:
     http://smilec.s3.amazonaws.com/smileplugbom-0.5.2.zip
@@ -40,7 +40,7 @@ Here are some basic notes in GIST form to cover WPA2 configuration: https://gist
 
 General Arch Linux Arm details on SMILE Plug release (NOTE, this is not current, as the Arch Linux ARM team has not yet officially posted a support link for this device yet):
 
-* http://archlinuxarm.org/smile-plug
+* http://archlinuxarm.org/smileplugi (TODO: No longer supports NAND-based installation onto SMILE Plugs, need to update for MMC based install)
 
 Pacman Package Manifest
 =======================
@@ -69,7 +69,7 @@ NPM Modules:
 
 Other Non-NPM Node Software:
 
-* SMILE Server 0.3.1 (this holds pointers to all Android software used)
+* SMILE Server 1.0.0 (this holds pointers to all Android software used)
 * Plugmin Server 0.5.8
 * EpochEDU 0.6.0
 
@@ -137,7 +137,13 @@ Some manual commands to run in the configuration of a new BSP based on arch:
 Firmware Releases Changelog
 ===========================
 
-SMILE BSP 0.5.3
+SMILE BSP 0.5.4a
+* rootfs: TBD
+* uImage (kernel): TBD
+* uBoot: TBD
+* ubifs rootfs.img: TBD
+
+SMILE BSP 0.5.3 (TODO: Provide archive links)
 * rootfs: TBD
 * uImage (kernel): TBD
 * uBoot: TBD
@@ -152,5 +158,7 @@ Arch Linux ARM Tips
 Roadmap
 =======
 
-* 0.5.4 - Release additional SMILE software bug fixes
+* 0.5.4b - Release quality 1.0.x SMILE Plug Server
+* 0.5.4a - Finalize SMILE Plug Server 1.0.0 release candidate, remove 3rd party encumbrances, still some pre-alpha bugs
+* 0.5.3b - Release additional SMILE software bug fixes (0.3.x)
 * 0.6.0 - Complete migration to mainlain Arch Linux ARM distro
