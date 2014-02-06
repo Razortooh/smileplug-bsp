@@ -9,7 +9,7 @@ Changelog
 * 0.5.4b1gti - CES2014 timeframe release, includes EpochEDU WebRTC.  
 - Top level dir: bin  blank.sh  blinkbtled  ccn4bnode  dist  epochedu  mnt  node_modules  plugmin-server  smileplug-server  spdist  tmp  wifi.sh
 - dist: epochedu-webrtc  nTPL
-
+- ecpochedu/contentrepo: history  math  science  spanish
 Release Sources
 ===============
 
