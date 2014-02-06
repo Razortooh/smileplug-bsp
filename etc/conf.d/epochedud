@@ -1,6 +1,6 @@
-#
-# Set ARGS to point to your initial Node.js app/service
-#
-ARGS="./server.js"
-SERVERDIR="/root/epochedu"
+#                                                                                                                                                                                                                                            
+# Set ARGS to point to your initial Node.js app/service                                                                                                                                                                                      
+#                                                                                                                                                                                                                                            
+ARGS="/root/dist/epochedu-webrtc/epochedu/server.js"                                                                                                                                                                                         
+SERVERDIR="/root/epochedu"                                                                                                                                                                                                                   
 DAEMON="/usr/bin/forever"
