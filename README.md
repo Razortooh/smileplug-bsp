@@ -3,8 +3,15 @@ smileplug-bsp
 
 This is a bunch of initial config.  This will include a set of configs to be applied in the BSP.
 
+Changelog
+=========
+
+* 0.5.4b1gti - CES2014 timeframe release, includes EpochEDU WebRTC.  
+- Top level dir: bin  blank.sh  blinkbtled  ccn4bnode  dist  epochedu  mnt  node_modules  plugmin-server  smileplug-server  spdist  tmp  wifi.sh
+
 Release Sources
 ===============
+
 Kernel and wifi sources:
 
 * https://github.com/kmihelich/linux-smileplug
