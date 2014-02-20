@@ -1,0 +1,17 @@
+[Unit]
+Description=Node.js SMILE Plug Server
+After=syslog.target
+After=network.target
+Wants=postfix.service gitlab-worker.service
+
+[Service]
+# Type=forking
+Type=simple
+User=root
+WorkingDirectory=/root/smileplug-server
+ExecStart=/usr/bin/forever smileplug.js
+# ExecStart=/usr/bin/node smileplug.js
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
