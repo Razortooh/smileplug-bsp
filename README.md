@@ -3,6 +3,15 @@ smileplug-bsp
 
 This is a bunch of initial config.  This will include a set of configs to be applied in the BSP.
 
+Changelog
+=========
+
+* 0.5.5a-jamsj - Big set of changes for SMILE software.  Added 0.9.9 version of SMILE Teacher for Android, added new IQManager,
+improved stability of SMILE Student Web and SMILE Server for Node.js.  99 fixes and enhancements for SMILE Teacher, and 70 fixes and enhancements for SMILE Server
+* 0.5.4b - Release quality 1.0.x SMILE Plug Server (private beta release for GTI)
+* 0.5.4a - Finalize SMILE Plug Server 1.0.0 release candidate, remove 3rd party encumbrances, still some pre-alpha bugs (private alpha release for GTI)
+* 0.5.3b - Release additional SMILE software bug fixes (0.3.x)
+
 Release Sources
 ===============
 Kernel and wifi sources:
@@ -12,15 +21,21 @@ Kernel and wifi sources:
 
 The *Non-public* toolchain needed is listed under the "Generic SDK 5.0" on the extranet.  Due to some incompatibilities with the WLAN driver and Kernel, we were unable to build with a publicly available toolchain.  Please contact Marvell for access and to resolve build support issues.  Folder location is: My Products > Embedded Processors > ARMADA 370 > Software > Old Versions > Generic SDK 5.0 > Little Endian
 
-Current RootFS: 
+Current Release:
+* Rootfs Tarball: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2014-02-05-smileplug-0.5.5a-jamsj-rootfs.tar.bz2
+* Rootfs Tarball md5: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2014-02-05-smileplug-0.5.5a-jamsj-rootfs.tar.bz2.md5
+* Rootfs Image: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.5a-jamsj-rootfs.img
+* Rootfs Image md5 hash: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.5a-jamsj-rootfs.img.md5
 
+
+Previous Releases:
 * Rootfs Tarball: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-12-13-smileplug-0.5.4a-rootfs.tar.bz2
 * Rootfs Tarball md5: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2013-12-13-smileplug-0.5.4a-rootfs.tar.bz2.md5
 * Rootfs Image: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.4a-rootfs.img
 * Rootfs Image md5 hash: http://polyblog.s3.amazonaws.com/smileplug-0.5.4a-rootfs.img.md5
 
 All items mentioned in this page are found in a single zip file *TODO* update this zip:
-    http://smilec.s3.amazonaws.com/smileplugbom-0.5.2.zip
+    http://polyblog.s3.amazonaws.com/smileplugbom-0.5.5a-jamsj.zip
 
 Clean and Configuration Guide
 
@@ -69,9 +84,8 @@ NPM Modules:
 
 Other Non-NPM Node Software:
 
-* SMILE Server 1.0.0 (this holds pointers to all Android software used)
+* SMILE Server 1.0.4 (this holds pointers to all Android software used)
 * Plugmin Server 0.5.8
-* EpochEDU 0.6.0
 
 Scripts:
 * dhcpd-status.sh -> /root/spdist/dhcpd-pool-0.2/dhcpd-status-arch.sh
@@ -94,7 +108,6 @@ Assigned Ports
 * 9695 (CCNx CCND Status)
 * 9700 (CCN4BNode Web UI)
 * 9080 (plugmin WS/Web UI)
-* 5000 (epochedu)
 
 Python Modules:
 
@@ -158,7 +171,4 @@ Arch Linux ARM Tips
 Roadmap
 =======
 
-* 0.5.4b - Release quality 1.0.x SMILE Plug Server
-* 0.5.4a - Finalize SMILE Plug Server 1.0.0 release candidate, remove 3rd party encumbrances, still some pre-alpha bugs
-* 0.5.3b - Release additional SMILE software bug fixes (0.3.x)
 * 0.6.0 - Complete migration to mainlain Arch Linux ARM distro
