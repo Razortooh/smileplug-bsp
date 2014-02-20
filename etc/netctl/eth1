@@ -1,0 +1,13 @@
+Description="LAN-Wifi Bridge"
+Interface=br0
+Connection=bridge
+BindsToInterfaces=(eth1)
+IP=static
+Address=('10.4.0.1/24')
+#Routes=('192.168.0.0/24 via 192.168.1.2')
+#Gateway='192.168.1.1'
+#DNS=('192.168.1.1')
+## sets forward delay time
+#FwdDelay=0
+## sets max age of hello message
+#MaxAge=10

@@ -5,7 +5,7 @@ This is a bunch of initial config.  This will include a set of configs to be app
 
 Changelog
 =========
-
+* 0.5.5a-emmc - This is a release of the 0.5.5a-jamsj code, for production on the emmc units.
 * 0.5.5a-jamsj - Big set of changes for SMILE software.  Added 0.9.9 version of SMILE Teacher for Android, added new IQManager,
 improved stability of SMILE Student Web and SMILE Server for Node.js.  99 fixes and enhancements for SMILE Teacher, and 70 fixes and enhancements for SMILE Server
 * 0.5.4b - Release quality 1.0.x SMILE Plug Server (private beta release for GTI)
@@ -22,6 +22,9 @@ Kernel and wifi sources:
 The *Non-public* toolchain needed is listed under the "Generic SDK 5.0" on the extranet.  Due to some incompatibilities with the WLAN driver and Kernel, we were unable to build with a publicly available toolchain.  Please contact Marvell for access and to resolve build support issues.  Folder location is: My Products > Embedded Processors > ARMADA 370 > Software > Old Versions > Generic SDK 5.0 > Little Endian
 
 Current Release:
+TODO 
+
+0.5.5a-jamsj Release:
 * Rootfs Tarball: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2014-02-05-smileplug-0.5.5a-jamsj-rootfs.tar.bz2
 * Rootfs Tarball md5: http://polyblog.s3.amazonaws.com/ArchLinuxARM-2014-02-05-smileplug-0.5.5a-jamsj-rootfs.tar.bz2.md5
 * Rootfs Image: http://polyblog.s3.amazonaws.com/smileplugbsp-0.5.5a-jamsj-rootfs.img
