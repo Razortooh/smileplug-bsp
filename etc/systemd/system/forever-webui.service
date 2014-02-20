@@ -1,0 +1,15 @@
+[Unit]
+Description=Node.js Forever WebUI Service 
+After=syslog.target
+After=network.target
+
+[Service]
+# Type=forking
+Type=simple
+User=root
+WorkingDirectory=/root/spdist/forever-webui
+ExecStart=/usr/bin/node /root/spdist/forever-webui/app.js 
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target

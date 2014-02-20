@@ -1,0 +1,15 @@
+[Unit]
+Description=Node.js Plugmin Server
+After=syslog.target
+After=network.target
+
+[Service]
+# Type=forking
+Type=simple
+User=root
+WorkingDirectory=/root/plugmin-server
+ExecStart=/usr/bin/forever plugmin-server.js 
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target

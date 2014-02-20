@@ -2,7 +2,6 @@
 Description=Node.js SMILE Plug Server
 After=syslog.target
 After=network.target
-Wants=postfix.service gitlab-worker.service
 
 [Service]
 # Type=forking
