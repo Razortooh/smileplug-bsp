@@ -7,4 +7,4 @@ IP=dhcp
 ## for IPv6 autoconfiguration
 #IP6=stateless
 
-ExecUpPost='/usr/bin/ntpdate -ub 0.pool.ntp.org || true'
+ExecUpPost='route del default dev eth1 && /usr/bin/ntpdate -ub 0.pool.ntp.org || true'
